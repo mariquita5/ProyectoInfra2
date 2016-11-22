@@ -7,9 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.solr.client.solrj.SolrServerException;
 
-import dto.DTO_Pregunta;
+//import dto.DTO_Pregunta;
 
 /**
  * Servlet implementation class ServletRegistro
@@ -28,20 +27,20 @@ public class ServletRegistro extends HttpServlet {
     }
     
     
-    public void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SolrServerException
+    public void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
 
         String pregunta = request.getParameter("pregunta").toString();
     	String categoria = request.getParameter("tipo").toString();
     	String respuesta = request.getParameter("respuesta");    	
     	
-		DTO_Pregunta nuevaPregunta = new DTO_Pregunta();
-		nuevaPregunta.setCategoria(categoria);
-		nuevaPregunta.setPregunta(pregunta);
-		nuevaPregunta.setRespuesta(respuesta);
+		//DTO_Pregunta nuevaPregunta = new DTO_Pregunta();
+		//nuevaPregunta.setCategoria(categoria);
+		//nuevaPregunta.setPregunta(pregunta);
+		//nuevaPregunta.setRespuesta(respuesta);
 		
-		ControladorWeb.solicitudRealizarRegistro(nuevaPregunta);
-        request.setAttribute("DTO_Pregunta", nuevaPregunta);
+		//ControladorWeb.solicitudRealizarRegistro(nuevaPregunta);
+       // request.setAttribute("DTO_Pregunta", nuevaPregunta);
         request.getRequestDispatcher("respuestaRegistro.jsp").forward(request, response);
     	
     }    
@@ -53,12 +52,12 @@ public class ServletRegistro extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		try {
-			processRequest(request,response);
-		} catch (SolrServerException e) {
+		//try {
+			//processRequest(request,response);
+		//} catch ( e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			//e.printStackTrace();
+		//}
 		
 	}
 
@@ -67,12 +66,12 @@ public class ServletRegistro extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		try {
+		//try {
 			processRequest(request,response);
-		} catch (SolrServerException e) {
+		//} catch (SolrServerException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			//e.printStackTrace();
+		//}
 	}
 
 }
