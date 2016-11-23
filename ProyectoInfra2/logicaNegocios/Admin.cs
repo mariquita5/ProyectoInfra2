@@ -17,7 +17,7 @@ namespace ProyectoInfra2.logicaNegocios
         {
             try
             {
-                conection = "Server = LAPTOP-08ID3743;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
+                conection = "Server=LAPTOP-08ID3743;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
                 conectado = new MySqlConnection(conection);
             }
             catch (Exception)
@@ -66,6 +66,7 @@ namespace ProyectoInfra2.logicaNegocios
 
             }
         }
+
 
         public List<String[]> consultarUsuarios()
         {
