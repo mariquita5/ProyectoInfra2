@@ -44,9 +44,14 @@
                             <div class="4u" style="text-align: center"></div>
                             <div class="4u" style="text-align: center">
                                 <!--Usuario-->
-                                <h3>Usuario</h3>
+                                <h4>Usuario</h4>
                                 <p style="text-align: center">
                                     <asp:TextBox ID="txtUsuario" placeholder="Correo electrónico" TextMode="Email" runat="server" CssClass="input inputEmail" Width="400px"></asp:TextBox>
+                                </p>
+                                
+                                <h4>Contraseña</h4>
+                                <p style="text-align: center">
+                                    <asp:TextBox ID="txtContraseña" placeholder="Contraseña"  runat="server"  Width="400px"></asp:TextBox>
                                 </p>
 
                             </div>
@@ -60,8 +65,8 @@
                     </div>
 
                     <!--Botones de inicio-->
-                    <asp:Button ID="btnEliminar" CssClass="button buttonFacebook" runat="server" Text="Eliminar Usuario" CausesValidation="true" OnClick="Button1_Click" />
-                    <asp:Button ID="btnAgregar" CssClass="button buttonGoogle" runat="server" Text="Agregar Usuario" CausesValidation="true" OnClick="Button2_Click" />
+                    <asp:Button ID="btnEliminar" CssClass="button buttonFacebook" runat="server" Text="Eliminar Usuario" CausesValidation="true" OnClick="Button2_Click" />
+                    <asp:Button ID="btnAgregar" CssClass="button buttonGoogle" runat="server" Text="Agregar Usuario" CausesValidation="true" OnClick="Button1_Click" />
                     <asp:Button ID="Btnconsultar" CssClass="button" runat="server" Text="Consultar usuarios del MTA" CausesValidation="true" OnClick="Button3_Click" />
                 </section>
             </div>

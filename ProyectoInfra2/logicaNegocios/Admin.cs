@@ -34,7 +34,7 @@ namespace ProyectoInfra2.logicaNegocios
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;
 
-                comandoUsuario.CommandText = "INSERT INTO usuario(correo,contraseña) "
+                comandoUsuario.CommandText = "INSERT INTO infra2.usuario(correo,contraseña) "
                        + "VALUES('" + pCorreo + "','" + pContraseña+ ")";
            
                 comandoUsuario.ExecuteNonQuery();
