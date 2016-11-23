@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace TutorCognitivoDS2.vista
+namespace ProyectoInfra2.Vista
 {
-    public partial class AdministrarDatos : System.Web.UI.Page
+    public partial class inicio : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
