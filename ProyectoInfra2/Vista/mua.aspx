@@ -61,20 +61,30 @@
 
                                         <!--Correo 1-->
                                         <div class="4u 12u(mobile)">
-                                            <h3>Para CC</h3>
-                                            <asp:TextBox ID="txtNombre" placeholder="correo electronico" runat="server" CssClass="input inputText"></asp:TextBox>
+                                            <h1>Para CC</h1>
+                                            <asp:TextBox ID="txtCorreo" placeholder="correo electronico" runat="server" CssClass="input inputText"></asp:TextBox>
                                         </div>
 
                                         <!--Correo 2-->
                                         <div class="4u 12u(mobile)">
-                                            <h3>Para CCo</h3>
-                                            <asp:TextBox ID="txtApellido1" placeholder="correo electronico" runat="server" CssClass="input inputText"></asp:TextBox>
+                                            <h1>Para CCo</h1>
+                                            <asp:TextBox ID="txtCorreo2" placeholder="correo electronico" runat="server" CssClass="input inputText"></asp:TextBox>
                                         </div>
 
                                         <!--Asunto-->
                                         <div class="4u 12u(mobile)">
-                                            <h3>Asunto</h3>
-                                            <asp:TextBox ID="txtApellido2" placeholder="asunto" runat="server" CssClass="input inputText"></asp:TextBox>
+                                            <h1>Asunto</h1>
+                                            <asp:TextBox ID="txtAsunto" placeholder="asunto" runat="server" CssClass="input inputText"></asp:TextBox>
+                                        </div>
+                                        
+                                        <!--Mensaje-->
+                                       <div class="4u 12u(mobile)">
+                                            <h1>Mensaje</h1> 
+                                              <asp:TextBox ID="TextBox1"  runat="server" CssClass="input inputText" style="width:600px;height:400px"></asp:TextBox>
+                                        </div>
+                                        
+                                        <div class="12u" style="text-align: center">
+                                            <asp:Button ID="Button1" CssClass="button big" runat="server" Text="Enviar" CausesValidation="true"/>
                                         </div>
 
                                     <div class="row">
@@ -83,10 +93,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="12u" style="text-align: center">
-                                            <asp:Button ID="btnEnviar" CssClass="button big" runat="server" Text="Enviar" CausesValidation="true"/>
-                                        </div>
                                     </div>
                                 </div>
                             </section>
