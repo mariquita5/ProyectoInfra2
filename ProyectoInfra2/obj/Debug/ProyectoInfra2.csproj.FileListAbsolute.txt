@@ -77,3 +77,5 @@ C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\Micr
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debug\ProyectoInfra2.csprojResolveAssemblyReference.cache
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debug\ProyectoInfra2.dll
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debug\ProyectoInfra2.pdb
+C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\MySql.Data.dll
+C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\MySql.Data.xml
