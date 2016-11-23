@@ -14,5 +14,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/abarc/Documents/GitHub/ProyectoInfra2/javax.servlet-3.0.0.v201112011016-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abarc/Downloads/javax.servlet.jsp-2.2.0.v201112011158-sources.jar/javax.servlet.jsp-2.2.0.v201112011158-sources.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
