@@ -60,9 +60,9 @@
                     </div>
 
                     <!--Botones de inicio-->
-                    <asp:Button ID="btnEliminar" CssClass="button buttonFacebook" runat="server" Text="Eliminar Usuario" CausesValidation="true" />
-                    <asp:Button ID="btnAgregar" CssClass="button buttonGoogle" runat="server" Text="Agregar Usuario" CausesValidation="true" />
-                    <asp:Button ID="Btnconsultar" CssClass="button" runat="server" Text="Consultar usuarios del MTA" CausesValidation="true" />
+                    <asp:Button ID="btnEliminar" CssClass="button buttonFacebook" runat="server" Text="Eliminar Usuario" CausesValidation="true" OnClick="Button1_Click" />
+                    <asp:Button ID="btnAgregar" CssClass="button buttonGoogle" runat="server" Text="Agregar Usuario" CausesValidation="true" OnClick="Button2_Click" />
+                    <asp:Button ID="Btnconsultar" CssClass="button" runat="server" Text="Consultar usuarios del MTA" CausesValidation="true" OnClick="Button3_Click" />
                 </section>
             </div>
 

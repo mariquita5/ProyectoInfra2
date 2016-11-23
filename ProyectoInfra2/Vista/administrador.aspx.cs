@@ -19,6 +19,24 @@ namespace ProyectoInfra2.Vista
 
         }
 
+        protected void Button1_Click(object sender, System.EventArgs e)
+        {
+            
+        }
+
+        protected void Button2_Click(object sender, System.EventArgs e)
+        {
+            
+        }
+
+        protected void Button3_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+       
+
+
 
     }
 }
