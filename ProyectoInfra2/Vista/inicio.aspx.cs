@@ -13,5 +13,16 @@ namespace ProyectoInfra2.Vista
         {
 
         }
+
+        protected void Button1_Click(object sender, System.EventArgs e)
+        {
+            Server.Transfer("administrador.aspx", true);
+        }
+
+        protected void Button2_Click(object sender, System.EventArgs e)
+        {
+            Server.Transfer("mua.aspx", true);
+        }
+
     }
 }
