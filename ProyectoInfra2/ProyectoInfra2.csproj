@@ -250,6 +250,7 @@
     <Content Include="Vista\administrador.aspx" />
     <Content Include="Vista\inicio.aspx" />
     <Content Include="Vista\inicioPOST.aspx" />
+    <Content Include="Vista\LoginHTPPS.aspx" />
     <Content Include="Vista\mua.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -450,6 +451,13 @@
     </Compile>
     <Compile Include="Vista\inicioPOST.aspx.designer.cs">
       <DependentUpon>inicioPOST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\LoginHTPPS.aspx.cs">
+      <DependentUpon>LoginHTPPS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\LoginHTPPS.aspx.designer.cs">
+      <DependentUpon>LoginHTPPS.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\mua.aspx.cs">
       <DependentUpon>mua.aspx</DependentUpon>

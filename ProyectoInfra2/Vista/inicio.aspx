@@ -25,6 +25,7 @@
             <nav id="nav">
                 <ul>
                     <li><a href="InicioPOST.aspx">Login POST</a></li>
+                    <li><a href="LoginHTTPS.aspx">Login HTTPS</a></li>
                 </ul>
             </nav>
             </div>
@@ -65,8 +66,7 @@
 
                     <!--Botones de inicio-->
                     <asp:Button ID="btnFacebook" CssClass="button buttonFacebook" runat="server" Text="Administrador MTA" CausesValidation="true" OnClick="Button1_Click"  />
-                    <asp:Button ID="btnGoogle" CssClass="button buttonGoogle" runat="server" Text="Usuario MUA con http" CausesValidation="true" OnClick="Button2_Click" />
-                    <asp:Button ID="botonhttps" CssClass="button buttonGoogle" runat="server" Text="Usuario MUA con https" CausesValidation="true" OnClick="Button3_Click" />
+                    <asp:Button ID="btnGoogle" CssClass="button buttonGoogle" runat="server" Text="Usuario MUA " CausesValidation="true" OnClick="Button2_Click" />
                 </section>
             </div>
 
