@@ -18,25 +18,23 @@ namespace ProyectoInfra2
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            try
-            {
-                conectado.Open();
-                conection = "Server=LAPTOP-08ID3743;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
+           
+             
+                conection = "Server=localhost;database=infra2 ;uid =root;password =elegance5;port=3306;";
                 conectado = new MySqlConnection(conection);
-                comandoUsuario.CommandText = "INSERT INTO infra2.usuario(correo,contraseña) VALUES(@Correo,@Contraseña)";
+                conectado.Open();
+                comandoUsuario = new MySqlCommand();
+                comandoUsuario.Connection = conectado;
+                comandoUsuario.CommandText = "INSERT INTO usuario(correo,contraseña) VALUES(@Correo,@Contraseña)";
                 comandoUsuario.Parameters.AddWithValue("@Correo", "maria");
                 comandoUsuario.Parameters.AddWithValue("@Contraseña", "maria");
 
-                comandoUsuario.ExecuteNonQuery();
+
+                 comandoUsuario.ExecuteNonQuery();
                 conectado.Close();
                 Response.Write("'conexion exitosa' ");
 
-            }
-           catch (Exception)
-           {
-                Response.Write("'conexion no exitosa' ");
-
-            }
+           
 
 
 }

@@ -17,7 +17,7 @@ namespace ProyectoInfra2.logicaNegocios
         {
             try
             {
-                conection = "Server=LAPTOP-08ID3743;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
+                conection = "Server=localhost;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
                 conectado = new MySqlConnection(conection);
             }
             catch (Exception)
@@ -34,9 +34,10 @@ namespace ProyectoInfra2.logicaNegocios
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;
 
-                comandoUsuario.CommandText = "INSERT INTO infra2.usuario(correo,contraseña) "
-                       + "VALUES('" + pCorreo + "','" + pContraseña+ ")";
-           
+                comandoUsuario.CommandText = comandoUsuario.CommandText = "INSERT INTO usuario(correo,contraseña) VALUES(@Correo,@Contraseña)";
+                comandoUsuario.Parameters.AddWithValue("@Correo", pCorreo);
+                comandoUsuario.Parameters.AddWithValue("@Contraseña", pContraseña);
+
                 comandoUsuario.ExecuteNonQuery();
                 conectado.Close();
             }
