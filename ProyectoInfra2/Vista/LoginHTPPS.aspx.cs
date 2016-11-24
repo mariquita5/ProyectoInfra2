@@ -22,6 +22,7 @@ namespace ProyectoInfra2.Vista
             bool isPersistent = false;
             string username = txtUsuario.Text;
             string password = txtcontraseña.Text;
+          
 
             if (lblError.Text == String.Empty)
 

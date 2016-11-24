@@ -74,7 +74,6 @@ C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\Micr
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debug\ProyectoInfra2.csprojResolveAssemblyReference.cache
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debug\ProyectoInfra2.dll
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debug\ProyectoInfra2.pdb
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\MySql.Data.dll
