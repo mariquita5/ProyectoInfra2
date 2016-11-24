@@ -67,6 +67,32 @@ namespace ProyectoInfra2.logicaNegocios
         }
 
 
+        public bool verificarUsuario(String pCorreo,String pContraseña)
+        {
+            conectarBD();
+            conectado.Open();
+            comandoUsuario = new MySqlCommand();
+            comandoUsuario.Connection = conectado;
+            comandoUsuario.CommandText = "Select * from usuario";
+            consulta = comandoUsuario.ExecuteReader();
+            while (consulta.Read())
+            {
+                string Correo = consulta.GetValue(0).ToString();
+                string contraseña= consulta.GetValue(1).ToString();
+
+
+                if (pCorreo == Correo & pContraseña == contraseña)
+                {
+                    return true;
+                }
+            }
+
+            conectado.Close();
+            return false;
+        }
+
+
+
         public List<String[]> consultarUsuarios()
         {
             List<String[]> usuarios= new List<String[]>();
