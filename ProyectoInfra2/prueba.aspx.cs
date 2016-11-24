@@ -20,17 +20,17 @@ namespace ProyectoInfra2
 
            
              
-                conection = "Server=localhost;database=infra2 ;uid =root;password =elegance5;port=3306;";
+                conection = "Server=localhost;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
                 conectado = new MySqlConnection(conection);
                 conectado.Open();
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;
-                comandoUsuario.CommandText = "INSERT INTO usuario(correo,contraseña) VALUES(@Correo,@Contraseña)";
-                comandoUsuario.Parameters.AddWithValue("@Correo", "maria");
-                comandoUsuario.Parameters.AddWithValue("@Contraseña", "maria");
+                comandoUsuario.CommandText = "DELETE FROM usuario WHERE correo = 'majomadrig5@hotmail.com'";
+            // comandoUsuario.Parameters.AddWithValue("@Correo", "maria");
+            // comandoUsuario.Parameters.AddWithValue("@Contraseña", "maria");
 
 
-                 comandoUsuario.ExecuteNonQuery();
+            comandoUsuario.ExecuteNonQuery();
                 conectado.Close();
                 Response.Write("'conexion exitosa' ");
 

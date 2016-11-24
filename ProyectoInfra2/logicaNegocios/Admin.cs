@@ -56,9 +56,7 @@ namespace ProyectoInfra2.logicaNegocios
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;
 
-                comandoUsuario.CommandText = "DELETE FROM usuario WHERE correo = "+pCorreo;
-                       
-
+                comandoUsuario.CommandText = "Delete from usuario where correo='" + pCorreo +"';";
                 comandoUsuario.ExecuteNonQuery();
                 conectado.Close();
             }
