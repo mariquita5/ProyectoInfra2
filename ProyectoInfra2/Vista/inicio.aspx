@@ -25,7 +25,7 @@
             <nav id="nav">
                 <ul>
                     <li><a href="InicioPOST.aspx">Login POST</a></li>
-                    <li><a href="LoginHTTPS.aspx">Login HTTPS</a></li>
+                    <li><a href="LoginHTPPS.aspx">Login HTTPS</a></li>
                 </ul>
             </nav>
             </div>
