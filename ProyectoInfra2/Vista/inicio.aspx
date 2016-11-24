@@ -18,7 +18,7 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 <body>
-    <form id="formLogin" runat="server">
+    <form id="formLogin" runat="server" >
             <!--Cuerpo -->
             <div id="banner-wrapper">
                 <section id="banner">
@@ -40,7 +40,7 @@
                                 <!--Contraseña-->
                                 <h4>Contraseña</h4>
                                 <p style="text-align: center">
-                                    <asp:TextBox ID="TextBox1" placeholder="Contraseña" TextMode="Email" runat="server" CssClass="input inputEmail" Width="400px"></asp:TextBox>
+                                    <asp:TextBox ID="txtcontraseña" placeholder="Contraseña"  runat="server"  Width="400px"></asp:TextBox>
                                 </p>
          
                             </div>
@@ -56,7 +56,8 @@
 
                     <!--Botones de inicio-->
                     <asp:Button ID="btnFacebook" CssClass="button buttonFacebook" runat="server" Text="Administrador MTA" CausesValidation="true" OnClick="Button1_Click"  />
-                    <asp:Button ID="btnGoogle" CssClass="button buttonGoogle" runat="server" Text="Usuario MUA" CausesValidation="true" OnClick="Button2_Click" />
+                    <asp:Button ID="btnGoogle" CssClass="button buttonGoogle" runat="server" Text="Usuario MUA con http" CausesValidation="true" OnClick="Button2_Click" />
+                    <asp:Button ID="botonhttps" CssClass="button buttonGoogle" runat="server" Text="Usuario MUA con https" CausesValidation="true" OnClick="Button3_Click" />
                 </section>
             </div>
 

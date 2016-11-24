@@ -81,7 +81,7 @@ namespace ProyectoInfra2.logicaNegocios
                 string contraseña= consulta.GetValue(1).ToString();
 
 
-                if (pCorreo == Correo & pContraseña == contraseña)
+                if (pCorreo == Correo & pContraseña==contraseña)
                 {
                     return true;
                 }
