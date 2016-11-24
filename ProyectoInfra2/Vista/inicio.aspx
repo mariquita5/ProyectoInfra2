@@ -19,6 +19,15 @@
 </head>
 <body>
     <form id="formLogin" runat="server" >
+         <div id="page-wrapper">
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="InicioPOST.aspx">Login POST</a></li>
+                </ul>
+            </nav>
+            </div>
             <!--Cuerpo -->
             <div id="banner-wrapper">
                 <section id="banner">

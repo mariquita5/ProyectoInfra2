@@ -249,6 +249,7 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Vista\administrador.aspx" />
     <Content Include="Vista\inicio.aspx" />
+    <Content Include="Vista\inicioPOST.aspx" />
     <Content Include="Vista\mua.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -442,6 +443,13 @@
     </Compile>
     <Compile Include="Vista\inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\inicioPOST.aspx.cs">
+      <DependentUpon>inicioPOST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\inicioPOST.aspx.designer.cs">
+      <DependentUpon>inicioPOST.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\mua.aspx.cs">
       <DependentUpon>mua.aspx</DependentUpon>
