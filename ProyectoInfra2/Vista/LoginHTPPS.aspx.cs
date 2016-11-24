@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 
 namespace ProyectoInfra2.Vista
 {
@@ -16,13 +17,25 @@ namespace ProyectoInfra2.Vista
         }
 
         protected void Button1_Click(object sender, System.EventArgs e)
+
         {
+            bool isPersistent = false;
+            string username = txtUsuario.Text;
+            string password = txtcontraseña.Text;
+
             if (lblError.Text == String.Empty)
 
             {
 
-                Response.BufferOutput = true;
-                Response.Redirect("mua.aspx?User = " + txtUsuario.Text + txtcontraseña.Text);
+                string userData = "Aplicacion segura para el usuario.";
+
+                FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1,
+                username, DateTime.Now,DateTime.Now.AddMinutes(30),isPersistent,userData,
+                FormsAuthentication.FormsCookiePath);
+                string encTicket = FormsAuthentication.Encrypt(ticket);
+                Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, encTicket));
+
+                Response.Redirect("mua.aspx?User = " + username + password);
             }
 
             else

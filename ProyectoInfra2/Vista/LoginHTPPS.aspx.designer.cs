@@ -13,13 +13,13 @@ namespace ProyectoInfra2.Vista {
     public partial class LoginHTPPS {
         
         /// <summary>
-        /// formLogin control.
+        /// formLoginHttp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formLogin;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formLoginHttp;
         
         /// <summary>
         /// txtUsuario control.
