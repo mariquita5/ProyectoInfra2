@@ -15,7 +15,10 @@ namespace ProyectoInfra2.logicaNegocios
         {
             try
             {
-                conection = "Server=localhost;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
+                //Joseph
+                conection = "Server=localhost;database=infra2 ;uid =root;password =2014104188;SslMode=None;";
+                //Maria
+                //conection = "Server=localhost;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
                 conectado = new MySqlConnection(conection);
             }
             catch (Exception)
