@@ -6,6 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using ProyectoInfra2.logicaNegocios;
 using MySql.Data.MySqlClient;
+using mySMTP;
+using System.Net.Mail;
+
 
 namespace ProyectoInfra2
 {
@@ -15,28 +18,23 @@ namespace ProyectoInfra2
         private string conection;
         private MySqlConnection conectado;
         private MySqlDataReader consulta;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
-           
-             
-                conection = "Server=localhost;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
-                conectado = new MySqlConnection(conection);
-                conectado.Open();
-                comandoUsuario = new MySqlCommand();
-                comandoUsuario.Connection = conectado;
-                comandoUsuario.CommandText = "DELETE FROM usuario WHERE correo = 'majomadrig5@hotmail.com'";
-            // comandoUsuario.Parameters.AddWithValue("@Correo", "maria");
-            // comandoUsuario.Parameters.AddWithValue("@Contraseña", "maria");
+            string userName;
+            userName = User.Identity.Name;
+            HttpClientCertificate cert = Request.ClientCertificate;
+            if (cert.IsPresent)
+            {
+                Response.Write(" certificate was found.");
 
 
-            comandoUsuario.ExecuteNonQuery();
-                conectado.Close();
-                Response.Write("'conexion exitosa' ");
+        }
+            else
+            {
+                Response.Write("No certificate was found.");
+             }
 
-           
-
-
-}
-}
+        }
+    }
 }

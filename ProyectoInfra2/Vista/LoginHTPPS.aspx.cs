@@ -24,9 +24,7 @@ namespace ProyectoInfra2.Vista
             string password = txtcontraseña.Text;
           
 
-            if (lblError.Text == String.Empty)
-
-            {
+           
 
                 string userData = "Aplicacion segura para el usuario.";
 
@@ -37,12 +35,7 @@ namespace ProyectoInfra2.Vista
                 Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, encTicket));
 
                 Response.Redirect("mua.aspx?User = " + username + password);
-            }
-
-            else
-            {
-                mensaje("Todos los campos tienen que estar ingresados");
-            }
+            
 
 
         }

@@ -78,3 +78,4 @@ C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debu
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debug\ProyectoInfra2.pdb
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\MySql.Data.dll
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\bin\MySql.Data.xml
+C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\ProyectoInfra2\obj\Debug\ProyectoInfra2.csprojResolveAssemblyReference.cache
