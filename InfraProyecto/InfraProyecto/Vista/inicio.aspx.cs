@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using ProyectoInfra2.logicaNegocios;
 
 namespace ProyectoInfra2.Vista
 {
@@ -22,19 +17,18 @@ namespace ProyectoInfra2.Vista
 
         protected void Button2_Click(object sender, System.EventArgs e)
         {
-               if (lblError.Text == String.Empty)
-            
-                {
- 
-                 Response.BufferOutput = true;
-                 Response.Redirect("mua.aspx?User = " + txtUsuario.Text + txtcontraseña.Text);
-                 }
+            if (lblError.Text == String.Empty)
+            {
 
-                 else
-                {
-                 mensaje("Todos los campos tienen que estar ingresados");
-               }
-            
+                Response.BufferOutput = true;
+                Response.Redirect("mua.aspx?User = " + txtUsuario.Text + txtcontraseña.Text);
+            }
+
+            else
+            {
+                mensaje("Todos los campos tienen que estar ingresados");
+            }
+
 
         }
         protected void Button3_Click(object sender, System.EventArgs e)

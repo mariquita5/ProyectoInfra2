@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using MySql.Data.MySqlClient;
 
 namespace ProyectoInfra2.logicaNegocios
@@ -56,7 +54,7 @@ namespace ProyectoInfra2.logicaNegocios
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;
 
-                comandoUsuario.CommandText = "Delete from usuario where correo='" + pCorreo +"';";
+                comandoUsuario.CommandText = "Delete from usuario where correo='" + pCorreo + "';";
                 comandoUsuario.ExecuteNonQuery();
                 conectado.Close();
             }
@@ -67,7 +65,7 @@ namespace ProyectoInfra2.logicaNegocios
         }
 
 
-        public bool verificarUsuario(String pCorreo,String pContraseña)
+        public bool verificarUsuario(String pCorreo, String pContraseña)
         {
             conectarBD();
             conectado.Open();
@@ -78,10 +76,10 @@ namespace ProyectoInfra2.logicaNegocios
             while (consulta.Read())
             {
                 string Correo = consulta.GetValue(0).ToString();
-                string contraseña= consulta.GetValue(1).ToString();
+                string contraseña = consulta.GetValue(1).ToString();
 
 
-                if (pCorreo == Correo & pContraseña==contraseña)
+                if (pCorreo == Correo & pContraseña == contraseña)
                 {
                     return true;
                 }
@@ -95,7 +93,7 @@ namespace ProyectoInfra2.logicaNegocios
 
         public List<String[]> consultarUsuarios()
         {
-            List<String[]> usuarios= new List<String[]>();
+            List<String[]> usuarios = new List<String[]>();
             conectarBD();
             conectado.Open();
             comandoUsuario = new MySqlCommand();
@@ -106,9 +104,9 @@ namespace ProyectoInfra2.logicaNegocios
             while (consulta.Read())
             {
 
-                String[] usuario = { consulta.GetValue(0).ToString(), consulta.GetValue(1).ToString()};
+                String[] usuario = { consulta.GetValue(0).ToString(), consulta.GetValue(1).ToString() };
 
-               usuarios.Add(usuario);
+                usuarios.Add(usuario);
 
             }
 
