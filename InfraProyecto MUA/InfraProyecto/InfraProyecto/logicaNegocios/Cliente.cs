@@ -27,6 +27,20 @@ namespace ProyectoInfra2.logicaNegocios
             }
         }
 
+        public void conectarBD2()
+        {
+            try
+            {
+
+                conection = "Server=us-cdbr-iron-east-04.cleardb.net;database=ad_0729aa65b5d7b9c ;uid =bbaf6d2dfeba49;password =f3f6269b;SslMode=None;";
+                conectado = new MySqlConnection(conection);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
 
 
         public bool verificarUsuario(String pCorreo, String pContraseña)
