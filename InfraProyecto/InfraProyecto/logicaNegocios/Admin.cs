@@ -26,13 +26,27 @@ namespace ProyectoInfra2.logicaNegocios
             }
         }
 
+        public void conectarBD2()
+        {
+            try
+            {
+
+                conection = "Server=us-cdbr-iron-east-04.cleardb.net;database=ad_0729aa65b5d7b9c ;uid =bbaf6d2dfeba49;password =f3f6269b;SslMode=None;";
+                conectado = new MySqlConnection(conection);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
 
 
         public void registrarUsuario(String pCorreo, String pContraseña)
         {
             try
             {
-                conectarBD();
+                // conectarBD();
+                conectarBD2();
                 conectado.Open();
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;
@@ -54,7 +68,8 @@ namespace ProyectoInfra2.logicaNegocios
         {
             try
             {
-                conectarBD();
+                //conectarBD();
+                conectarBD2();
                 conectado.Open();
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;
@@ -72,7 +87,8 @@ namespace ProyectoInfra2.logicaNegocios
 
         public bool verificarContrasena(String pContraseña)
         {
-            conectarBD();
+            //conectarBD();
+            conectarBD2();
             conectado.Open();
             comandoUsuario = new MySqlCommand();
             comandoUsuario.Connection = conectado;
