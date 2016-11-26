@@ -26,21 +26,6 @@ namespace ProyectoInfra2.logicaNegocios
             }
         }
 
-        public void conectarBD2()
-        {
-            try
-            {
-
-
-                conection = "Server=localhost;database=hmailserver ;uid =root;password =elegance5;SslMode=None;";
-                conectado = new MySqlConnection(conection);
-            }
-            catch (Exception)
-            {
-
-            }
-        }
-
 
 
         public void registrarUsuario(String pCorreo, String pContraseña)
