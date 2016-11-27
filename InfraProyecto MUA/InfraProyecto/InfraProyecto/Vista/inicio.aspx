@@ -1,4 +1,4 @@
-ï»¿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="inicio.aspx.cs" Inherits="ProyectoInfra2.Vista.inicio" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="inicio.aspx.cs" Inherits="ProyectoInfra2.Vista.inicio" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Correo INFRATEC</title>
 
-    <!--Configuraciones de la pÃ¡gina-->
+    <!--Configuraciones de la página-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -45,12 +45,12 @@
                                 <!--Correo usuario-->
                                 <h3>Correo</h3>
                                 <p style="text-align: center">
-                                    <asp:TextBox ID="txtUsuario" placeholder="Correo electrÃ³nico"  runat="server"  Width="400px"></asp:TextBox>
+                                    <asp:TextBox ID="txtUsuario" placeholder="Correo electrónico"  runat="server"  Width="400px"></asp:TextBox>
                                 </p>
-                                <!--ContraseÃ±a-->
-                                <h4>ContraseÃ±a</h4>
+                                <!--Contraseña-->
+                                <h4>Contraseña</h4>
                                 <p style="text-align: center">
-                                    <asp:TextBox ID="txtcontraseÃ±a" placeholder="ContraseÃ±a"  runat="server"  Width="400px"></asp:TextBox>
+                                    <asp:TextBox ID="txtcontraseña" placeholder="Contraseña" TextMode="Password" runat="server"  Width="400px"></asp:TextBox>
                                 </p>
          
                             </div>
