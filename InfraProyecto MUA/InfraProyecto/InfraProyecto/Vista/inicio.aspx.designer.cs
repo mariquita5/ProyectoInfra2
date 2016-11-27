@@ -29,9 +29,9 @@ namespace ProyectoInfra2.Vista {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUsuario;
-        
+
         /// <summary>
-        /// Control txtcontraseña.
+        /// Control txtcontrase�a.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
