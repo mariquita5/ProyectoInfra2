@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="inicio.aspx.cs" Inherits="ProyectoInfra2.Vista.inicio" %>
+ï»¿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="inicio.aspx.cs" Inherits="ProyectoInfra2.Vista.inicio" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Correo INFRATEC</title>
 
-    <!--Configuraciones de la página-->
+    <!--Configuraciones de la pï¿½gina-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -18,8 +18,8 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 <body>
-    <form id="formLogin" runat="server" >
-         <div id="page-wrapper">
+    <form id="formLogin" runat="server">
+        <div id="page-wrapper">
 
             <!-- Nav -->
             <nav id="nav">
@@ -28,34 +28,34 @@
                     <li><a href="LoginHTPPS.aspx">Login HTTPS</a></li>
                 </ul>
             </nav>
-            </div>
-            <!--Cuerpo -->
-            <div id="banner-wrapper">
-                <section id="banner">
-                    <!--titulo-->
-                    <h2><a id="logo">Correo InfraTEC</a></h2>
+        </div>
+        <!--Cuerpo -->
+        <div id="banner-wrapper">
+            <section id="banner">
+                <!--titulo-->
+                <h2><a id="logo">Correo InfraTEC</a></h2>
 
-                    <!--Correo-->
-                    <div class="login">
+                <!--Correo-->
+                <div class="login">
 
 
-                        <div class="row">
-                            <div class="4u" style="text-align: center"></div>
-                            <div class="4u" style="text-align: center">
-                                <!--Correo usuario-->
-                                <h3>Correo</h3>
-                                <p style="text-align: center">
-                                    <asp:TextBox ID="txtUsuario" placeholder="Correo electrónico"  runat="server"  Width="400px"></asp:TextBox>
-                                </p>
-                                <!--Contraseña-->
-                                <h4>Contraseña</h4>
-                                <p style="text-align: center">
-                                    <asp:TextBox ID="txtcontraseña" placeholder="Contraseña" TextMode="Password" runat="server"  Width="400px"></asp:TextBox>
-                                </p>
-         
-                            </div>
-                            <div class="4u" style="text-align: center"></div>
+                    <div class="row">
+                        <div class="4u" style="text-align: center"></div>
+                        <div class="4u" style="text-align: center">
+                            <!--Correo usuario-->
+                            <h3>Correo</h3>
+                            <p style="text-align: center">
+                                <asp:TextBox ID="txtUsuario" placeholder="Correo electrÃ³nico" runat="server" Width="400px"></asp:TextBox>
+                            </p>
+                            <!--Contraseï¿½a-->
+                            <h4>ContraseÃ±a</h4>
+                            <p style="text-align: center">
+                                <asp:TextBox ID="txtcontraseÃ±a" placeholder="ContraseÃ±a" TextMode="Password" runat="server" Width="400px"></asp:TextBox>
+                            </p>
+
                         </div>
+                        <div class="4u" style="text-align: center"></div>
+                    </div>
 
 
                     <div class="row">
@@ -66,19 +66,20 @@
 
                     <!--Botones de inicio-->
                     <asp:Button ID="btnGoogle" CssClass="button buttonGoogle" runat="server" Text="Ingresar " CausesValidation="true" OnClick="Button2_Click" />
-                </section>
-            </div>
-
-            <!-- Footer -->
-            <footer id="footer" class="container">
-                <!-- Copyright -->
-                <div id="copyright">
-
-                    <ul class="menu">
-                        Creado por <b>Grupo 5</b> / II semestre / <b>Noviembre 2016</b>
-                    </ul>
                 </div>
-            </footer>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="container">
+            <!-- Copyright -->
+            <div id="copyright">
+
+                <ul class="menu">
+                    Creado por <b>Grupo 5</b> / II semestre / <b>Noviembre 2016</b>
+                </ul>
+            </div>
+        </footer>
         </div>
 
         <!-- Scripts -->
