@@ -23,19 +23,19 @@ namespace NoSeQueHago
             //SmtpDirect.Send(mail);
 
             MailMessage email = new MailMessage();
-            email.To.Add(new MailAddress("lucia@infra2tec.com"));
-            email.From = new MailAddress("j@infra2tec.com");
+            email.To.Add(new MailAddress("lucia@infra2ati.com"));
+            email.From = new MailAddress("jvega@infra2ati.com");
             email.Subject = "Asunto ( Hola Luuuuuuuuuu ) ";
             email.Body = "Cualquier contenido en <b>HTML</b> para enviarlo por correo electrónico.";
             email.IsBodyHtml = true;
             email.Priority = MailPriority.Normal;
 
             SmtpClient smtp = new SmtpClient();
-            smtp.Host = "infra2tec.com";
+            smtp.Host = "infra2ati.com";
             smtp.Port = 2525;
             smtp.EnableSsl = false;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential("lucia@infra2tec.com", "hola12345");
+            smtp.Credentials = new NetworkCredential("lucia@infra2ati.com", "hola1234");
 
             string output = null;
 
