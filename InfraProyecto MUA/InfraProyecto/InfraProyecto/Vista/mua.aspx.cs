@@ -11,6 +11,8 @@ namespace ProyectoInfra2.Vista
         protected void Button2_Click(object sender, System.EventArgs e)
         {
 
+
+
         }
 
     }

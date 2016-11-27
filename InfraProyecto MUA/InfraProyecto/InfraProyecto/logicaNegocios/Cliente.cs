@@ -45,7 +45,7 @@ namespace ProyectoInfra2.logicaNegocios
 
         public bool verificarUsuario(String pCorreo, String pContraseña)
         {
-            conectarBD();
+            conectarBD2();
             conectado.Open();
             comandoUsuario = new MySqlCommand();
             comandoUsuario.Connection = conectado;

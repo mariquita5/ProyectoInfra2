@@ -29,7 +29,9 @@
 	form textarea {
 		position: relative;
 		-ms-behavior: url("assets/js/ie/PIE.htc");
-	}
+    top: -2px;
+    left: 2px;
+}
 
 /* Button */
 
