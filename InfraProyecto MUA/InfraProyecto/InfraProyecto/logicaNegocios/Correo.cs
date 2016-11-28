@@ -60,7 +60,7 @@ namespace InfraProyecto.logicaNegocios
 
             WriteToStream(ref nwstream, "EHLO 192.168.1.5");
             ReadFromStream(ref nwstream, out strResponse);
-           Console.Write(strResponse);
+            Console.Write(strResponse);
 
             WriteToStream(ref nwstream, "MAIL FROM: " + strMailFrom);
             ReadFromStream(ref nwstream, out strResponse);
