@@ -52,7 +52,7 @@ namespace InfraProyecto.logicaNegocios
             }
             catch (SocketException socketEx)
             {
-                //Console.Write("Connection Error: " + socketEx.ToString());
+                Console.Write("Connection Error: " + socketEx.ToString());
             }
 
             NetworkStream nwstream = tcpc.GetStream();
@@ -60,27 +60,27 @@ namespace InfraProyecto.logicaNegocios
 
             WriteToStream(ref nwstream, "EHLO 192.168.1.5");
             ReadFromStream(ref nwstream, out strResponse);
-           // Console.Write(strResponse);
+           Console.Write(strResponse);
 
             WriteToStream(ref nwstream, "MAIL FROM: " + strMailFrom);
             ReadFromStream(ref nwstream, out strResponse);
-           // Console.Write(strResponse);
+            Console.Write(strResponse);
 
             WriteToStream(ref nwstream, "RCPT TO: " + strSendTo);
             ReadFromStream(ref nwstream, out strResponse);
-           // Console.Write(strResponse);
+           Console.Write(strResponse);
 
             WriteToStream(ref nwstream, "DATA");
             ReadFromStream(ref nwstream, out strResponse);
-           // Console.Write(strResponse);
+           Console.Write(strResponse);
 
             WriteToStream(ref nwstream, "Subject: " + strSubject + "\r\n\r\n" + strMensaje);
             ReadFromStream(ref nwstream, out strResponse);
-            //Console.Write(strResponse);
+            Console.Write(strResponse);
 
             WriteToStream(ref nwstream, ".");
             ReadFromStream(ref nwstream, out strResponse);
-            //Console.Write(strResponse);
+            Console.Write(strResponse);
         }
 
     }
