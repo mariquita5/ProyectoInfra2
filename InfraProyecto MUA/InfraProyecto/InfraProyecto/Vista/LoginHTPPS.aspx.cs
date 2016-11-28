@@ -19,9 +19,6 @@ namespace ProyectoInfra2.Vista
             string username = txtUsuario.Text;
             string password = txtcontraseña.Text;
 
-
-
-
             string userData = "Aplicacion segura para el usuario.";
 
             FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1,
@@ -30,7 +27,7 @@ namespace ProyectoInfra2.Vista
             string encTicket = FormsAuthentication.Encrypt(ticket);
             Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, encTicket));
 
-            Response.Redirect("mua.aspx?User = " + username + password);
+            //Response.Redirect("mua.aspx?User = " + username + password);
 
 
 
