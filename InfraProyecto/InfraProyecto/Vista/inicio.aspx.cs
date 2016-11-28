@@ -18,7 +18,7 @@ namespace ProyectoInfra2.Vista
 
             {
                 Admin administrador2 = new logicaNegocios.Admin();
-               bool validacion= administrador2.verificarContrasena(txtcontraseña.Text);
+               bool validacion= administrador2.verificarContrasenaAdmin(txtcontraseña.Text);
                 if(validacion==true)
                 {
 
