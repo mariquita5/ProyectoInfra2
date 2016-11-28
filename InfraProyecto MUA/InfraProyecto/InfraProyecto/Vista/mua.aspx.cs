@@ -30,12 +30,12 @@ namespace ProyectoInfra2.Vista
 
         protected void Button3_Click(object sender, System.EventArgs e)
         {
-
            
             Correo correo = new Correo();
             correo.procesar(txtCorreo.Text, txtCorreo2.Text, txtAsunto.Text, txtMensaje.Text);
-          
-          
+            Response.Redirect("Telnet.aspx");
+
+
         }
 
         public void mensaje(String pMensaje)

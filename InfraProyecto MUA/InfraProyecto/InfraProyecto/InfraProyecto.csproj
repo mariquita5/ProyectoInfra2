@@ -277,6 +277,7 @@
     <Content Include="Vista\js\skel.min.js" />
     <Content Include="Vista\LoginHTPPS.aspx" />
     <Content Include="Vista\mua.aspx" />
+    <Content Include="Vista\Telnet.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -488,6 +489,13 @@
     </Compile>
     <Compile Include="Vista\mua.aspx.designer.cs">
       <DependentUpon>mua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Telnet.aspx.cs">
+      <DependentUpon>Telnet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Telnet.aspx.designer.cs">
+      <DependentUpon>Telnet.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
