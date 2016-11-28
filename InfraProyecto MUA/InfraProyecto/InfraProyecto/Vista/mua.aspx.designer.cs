@@ -49,13 +49,13 @@ namespace ProyectoInfra2.Vista {
         protected global::System.Web.UI.WebControls.TextBox txtAsunto;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txtMensaje control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtMensaje;
         
         /// <summary>
         /// Button1 control.

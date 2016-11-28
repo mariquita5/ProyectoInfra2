@@ -78,7 +78,7 @@
                                         <!--Mensaje-->
                                        <div class="4u 12u(mobile)">
                                             <h1>Mensaje</h1> 
-                                              <asp:TextBox ID="TextBox1"  runat="server" CssClass="input inputText" style="width:600px;height:400px"></asp:TextBox>
+                                              <asp:TextBox ID="txtMensaje" runat="server" CssClass="input inputText" style="width:600px;height:400px"></asp:TextBox>
                                         </div>
                                         
                                         <div class="12u" style="text-align: center">

@@ -25,7 +25,7 @@ namespace ProyectoInfra2.Vista
             mensaje(nvc["txtUsuario"] + nvc["txtcontraseña"]);
 
             Correo correo = new Correo();
-            //correo.procesar();
+            correo.procesar(txtCorreo.Text,txtCorreo2.Text,txtAsunto.Text, txtMensaje.Text);
 
         }
 
