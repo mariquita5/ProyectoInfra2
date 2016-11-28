@@ -17,10 +17,7 @@ namespace ProyectoInfra2.Vista
             
                 Admin administrador = new logicaNegocios.Admin();
                 administrador.registrarUsuario(txtUsuario.Text, txtContraseña.Text);
-                //mensaje("Usuario registrado con exito");
-
-              
-            
+                mensaje("Usuario registrado con exito");
 
 
         }

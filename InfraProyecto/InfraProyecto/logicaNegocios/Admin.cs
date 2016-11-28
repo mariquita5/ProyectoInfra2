@@ -54,7 +54,7 @@ namespace ProyectoInfra2.logicaNegocios
                 aplicacion.Authenticate("Administrador", "12345");
                 var domain = aplicacion.Domains.ItemByName["rubenabix.com"];
                 var account = domain.Accounts.Add();
-                account.Address = pUsuario + "rubenabix.com";
+                account.Address = pUsuario;
                 account.Password = pContraseña;
                 account.Active = true;
 
@@ -69,59 +69,19 @@ namespace ProyectoInfra2.logicaNegocios
         }
 
 
-        public void EliminarUsuario(String pCorreo)
+        public void EliminarUsuario(String pUsuario)
         {
             try
             {
-                System.Type hMailServerCOM = System.Type.GetTypeFromProgID("hMailServer.Application");
-                dynamic hMailServerInstance = Activator.CreateInstance(hMailServerCOM);
-                hMailServerInstance.Authenticate("Administrator", "12345");
-                hMailServerInstance.Settings.Routes.Refresh();
-                dynamic Domain = hMailServerInstance.Domains.ItemByName("rubenabix.com");
-                dynamic account = Domain.Accounts.ItemByAddress(pCorreo);
-               //account.Save;
+                hMailServer.Application aplicacion = new hMailServer.Application();
+                aplicacion.Authenticate("Administrador", "12345");
+                var domain = aplicacion.Domains.ItemByName["rubenabix.com"];
+                var account = domain.Accounts.ItemByAddress[pUsuario];
+                account.Active = true;
 
-            }
-            catch (Exception)
-            {
+                account.Save();
 
-            }
-        }
 
-        public void registrarUsuarioBD(String pCorreo, String pContraseña)
-        {
-            try
-            {
-                conectarBD();
-                conectado.Open();
-                comandoUsuario = new MySqlCommand();
-                comandoUsuario.Connection = conectado;
-
-                comandoUsuario.CommandText = comandoUsuario.CommandText = "INSERT INTO hm_accounts(accountid,accountdomainid,accountadminlevel,accountactive,accountaddress,accountpassword) VALUES(@accountaddress,@accountpassword)";
-                comandoUsuario.Parameters.AddWithValue("@accountaddress", pCorreo);
-                comandoUsuario.Parameters.AddWithValue("@Contraseña", pContraseña);
-
-                comandoUsuario.ExecuteNonQuery();
-                conectado.Close();
-            }
-            catch (Exception)
-            {
-
-            }
-        }
-
-        public void eliminarUsuarioBD(String pCorreo)
-        {
-            try
-            {
-                conectarBD();
-                conectado.Open();
-                comandoUsuario = new MySqlCommand();
-                comandoUsuario.Connection = conectado;
-
-                comandoUsuario.CommandText = "Delete from usuario where correo='" + pCorreo + "';";
-                comandoUsuario.ExecuteNonQuery();
-                conectado.Close();
             }
             catch (Exception)
             {
