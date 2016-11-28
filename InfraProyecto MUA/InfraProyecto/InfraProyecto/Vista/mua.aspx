@@ -59,13 +59,13 @@
 
                                         <!--Correo 1-->
                                         <div class="4u 12u(mobile)">
-                                            <h1>Para CC</h1>
+                                            <h1>De</h1>
                                             <asp:TextBox ID="txtCorreo" placeholder="correo electronico" runat="server" CssClass="input inputText"></asp:TextBox>
                                         </div>
 
                                         <!--Correo 2-->
                                         <div class="4u 12u(mobile)">
-                                            <h1>Para CCo</h1>
+                                            <h1>Para</h1>
                                             <asp:TextBox ID="txtCorreo2" placeholder="correo electronico" runat="server" CssClass="input inputText"></asp:TextBox>
                                         </div>
 
@@ -78,11 +78,11 @@
                                         <!--Mensaje-->
                                        <div class="4u 12u(mobile)">
                                             <h1>Mensaje</h1> 
-                                              <asp:TextBox ID="TextBox1"  runat="server" CssClass="input inputText" style="width:600px;height:400px"></asp:TextBox>
+                                              <asp:TextBox ID="txtMensaje" runat="server" CssClass="input inputText" style="width:600px;height:400px"></asp:TextBox>
                                         </div>
                                         
                                         <div class="12u" style="text-align: center">
-                                            <asp:Button ID="Button1" CssClass="button big" runat="server" Text="Enviar" CausesValidation="true" OnClick="Button2_Click"/>
+                                            <asp:Button ID="Button1" CssClass="button big" runat="server" Text="Enviar" CausesValidation="true" OnClick="Button3_Click"/>
                                         </div>
 
                                                                                 <div class="12u" style="text-align: center">

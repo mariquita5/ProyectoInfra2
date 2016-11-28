@@ -17,28 +17,15 @@ namespace ProyectoInfra2.logicaNegocios
             {
                
                    
-                conection = "Server=localhost;database=infra2 ;uid =root;password =elegance5;SslMode=None;";
-                conectado = new MySqlConnection(conection);
+               conection = "Server=localhost;database=hmailserver;uid =root;password =elegance5;SslMode=None;";
+               conectado = new MySqlConnection(conection);
             }
             catch (Exception)
             {
 
             }
         }
-
-        public void conectarBD2()
-        {
-            try
-            {
-
-                conection = "Server=us-cdbr-iron-east-04.cleardb.net;database=ad_0729aa65b5d7b9c ;uid =bbaf6d2dfeba49;password =f3f6269b;SslMode=None;";
-                conectado = new MySqlConnection(conection);
-            }
-            catch (Exception)
-            {
-
-            }
-        }
+        
 
 
         public void registrarUsuario(String pCorreo, String pContraseña)
@@ -46,12 +33,12 @@ namespace ProyectoInfra2.logicaNegocios
             try
             {
                 // conectarBD();
-                conectarBD2();
+                conectarBD();
                 conectado.Open();
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;
 
-                comandoUsuario.CommandText = comandoUsuario.CommandText = "INSERT INTO usuario(correo,contraseña) VALUES(@Correo,@Contraseña)";
+                comandoUsuario.CommandText = comandoUsuario.CommandText = "INSERT INTO hm(correo,contraseña) VALUES(@Correo,@Contraseña)";
                 comandoUsuario.Parameters.AddWithValue("@Correo", pCorreo);
                 comandoUsuario.Parameters.AddWithValue("@Contraseña", pContraseña);
 
@@ -68,8 +55,7 @@ namespace ProyectoInfra2.logicaNegocios
         {
             try
             {
-                //conectarBD();
-                conectarBD2();
+                conectarBD();
                 conectado.Open();
                 comandoUsuario = new MySqlCommand();
                 comandoUsuario.Connection = conectado;

@@ -17,7 +17,7 @@ namespace ProyectoInfra2.Vista
             if (lblError.Text == String.Empty)
             {
               Cliente cliente = new Cliente();
-                bool validacion = cliente.verificarUsuario(txtUsuario.Text, txtcontraseña.Text);
+                bool validacion = cliente.verificarUsuario(txtUsuario.Text);
                 if(validacion== true)
                 {
                     Response.BufferOutput = true;
