@@ -437,7 +437,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="logicaNegocios\Cliente.cs" />
-    <Compile Include="logicaNegocios\SmtpDirect.cs" />
+    <Compile Include="logicaNegocios\Correo.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
