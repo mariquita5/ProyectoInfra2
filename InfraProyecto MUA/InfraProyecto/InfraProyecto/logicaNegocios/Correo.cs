@@ -52,7 +52,7 @@ namespace InfraProyecto.logicaNegocios
             }
             catch (SocketException socketEx)
             {
-                Console.Write("Connection Error: " + socketEx.ToString());
+                //Console.Write("Connection Error: " + socketEx.ToString());
             }
 
             NetworkStream nwstream = tcpc.GetStream();

@@ -277,7 +277,6 @@
     <Content Include="Vista\js\skel.min.js" />
     <Content Include="Vista\LoginHTPPS.aspx" />
     <Content Include="Vista\mua.aspx" />
-    <Content Include="Vista\send.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
@@ -489,13 +488,6 @@
     </Compile>
     <Compile Include="Vista\mua.aspx.designer.cs">
       <DependentUpon>mua.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\send.aspx.cs">
-      <DependentUpon>send.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\send.aspx.designer.cs">
-      <DependentUpon>send.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

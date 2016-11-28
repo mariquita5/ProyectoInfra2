@@ -59,13 +59,13 @@
 
                                         <!--Correo 1-->
                                         <div class="4u 12u(mobile)">
-                                            <h1>Para CC</h1>
+                                            <h1>De</h1>
                                             <asp:TextBox ID="txtCorreo" placeholder="correo electronico" runat="server" CssClass="input inputText"></asp:TextBox>
                                         </div>
 
                                         <!--Correo 2-->
                                         <div class="4u 12u(mobile)">
-                                            <h1>Para CCo</h1>
+                                            <h1>Para</h1>
                                             <asp:TextBox ID="txtCorreo2" placeholder="correo electronico" runat="server" CssClass="input inputText"></asp:TextBox>
                                         </div>
 

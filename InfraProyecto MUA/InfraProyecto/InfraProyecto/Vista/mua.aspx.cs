@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Specialized;
 using System.Web.UI;
+using InfraProyecto.logicaNegocios;
 
 namespace ProyectoInfra2.Vista
 {
@@ -22,6 +23,9 @@ namespace ProyectoInfra2.Vista
             NameValueCollection nvc = Request.Form;
 
             mensaje(nvc["txtUsuario"] + nvc["txtcontraseña"]);
+
+            Correo correo = new Correo();
+            //correo.procesar();
 
         }
 
