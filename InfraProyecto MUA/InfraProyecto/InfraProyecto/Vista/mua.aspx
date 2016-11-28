@@ -82,7 +82,7 @@
                                         </div>
                                         
                                         <div class="12u" style="text-align: center">
-                                            <asp:Button ID="Button1" CssClass="button big" runat="server" Text="Enviar" CausesValidation="true" OnClick="Button2_Click"/>
+                                            <asp:Button ID="Button1" CssClass="button big" runat="server" Text="Enviar" CausesValidation="true" OnClick="Button3_Click"/>
                                         </div>
 
                                                                                 <div class="12u" style="text-align: center">

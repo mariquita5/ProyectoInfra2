@@ -24,10 +24,18 @@ namespace ProyectoInfra2.Vista
 
             mensaje(nvc["txtUsuario"] + nvc["txtcontraseña"]);
 
-            Correo correo = new Correo();
-            correo.procesar(txtCorreo.Text,txtCorreo2.Text,txtAsunto.Text, txtMensaje.Text);
-
+           
         }
+
+        protected void Button3_Click(object sender, System.EventArgs e)
+        {
+
+
+            Correo correo = new Correo();
+            correo.procesar(txtCorreo.Text, txtCorreo2.Text, txtAsunto.Text, txtMensaje.Text);
+            mensaje("Mensaje enviado con exito");
+        }
+
 
         public void mensaje(String pMensaje)
         {
