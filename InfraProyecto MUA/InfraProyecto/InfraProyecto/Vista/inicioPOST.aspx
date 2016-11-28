@@ -9,6 +9,7 @@
     <!--Configuraciones de la p�gina-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    var request = (HttpWebRequest)WebRequest.Create("http://www.example.com/recepticle.aspx");
 
     <!--Archivos .js responsive-->
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-    <form id="formLogin" runat="server" >
+    <form id="formLogin" runat="server" method="post" action="mua.aspx">
          <div id="page-wrapper">
 
             <!-- Nav -->
@@ -34,7 +35,7 @@
             <div id="banner-wrapper">
                 <section id="banner">
                     <!--titulo-->
-                    <h2><a id="logo">Correo InfraTEC</a></h2>
+                    <h2><a id="logo">Correo InfraTEC POST</a></h2>
 
                     <!--Correo-->
                     <div class="login">

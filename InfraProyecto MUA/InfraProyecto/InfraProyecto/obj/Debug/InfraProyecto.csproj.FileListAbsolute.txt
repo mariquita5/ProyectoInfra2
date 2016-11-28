@@ -188,7 +188,6 @@ C:\Users\majom\Desktop\InfraProyecto MUA\InfraProyecto\InfraProyecto\bin\es\Micr
 C:\Users\majom\Desktop\InfraProyecto MUA\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.csprojResolveAssemblyReference.cache
 C:\Users\majom\Desktop\InfraProyecto MUA\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.dll
 C:\Users\majom\Desktop\InfraProyecto MUA\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.pdb
-C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\InfraProyecto\bin\ApplicationInsights.config
 C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\InfraProyecto\bin\roslyn\csc.exe
 C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\InfraProyecto\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\InfraProyecto\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -283,3 +282,4 @@ C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\I
 C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.csprojResolveAssemblyReference.cache
 C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.dll
 C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.pdb
+C:\Users\abarc\Documents\GitHub\ProyectoInfra2\InfraProyecto MUA\InfraProyecto\InfraProyecto\bin\Vista\ApplicationInsights.config

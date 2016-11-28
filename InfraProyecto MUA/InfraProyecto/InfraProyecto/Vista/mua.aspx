@@ -85,6 +85,9 @@
                                             <asp:Button ID="Button1" CssClass="button big" runat="server" Text="Enviar" CausesValidation="true" OnClick="Button2_Click"/>
                                         </div>
 
+                                                                                <div class="12u" style="text-align: center">
+                                        </div>
+
                                     <div class="row">
                                         <div class="12u" style="text-align: center">
                                             <asp:Label ID="lblError" runat="server"></asp:Label>

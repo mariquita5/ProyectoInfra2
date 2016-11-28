@@ -21,7 +21,7 @@ namespace ProyectoInfra2.Vista
                 if(validacion== true)
                 {
                     Response.BufferOutput = true;
-                Response.Redirect("mua.aspx?User = " + txtUsuario.Text + txtcontraseña.Text);
+                Response.Redirect("mua.aspx?user="+ txtUsuario.Text + "&password=" + txtcontraseña.Text);
                 }
                 else
                 {
