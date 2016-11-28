@@ -27,19 +27,15 @@ namespace ProyectoInfra2.Vista
            
         }
 
+
         protected void Button3_Click(object sender, System.EventArgs e)
         {
 
-            try
-            {
-                Correo correo = new Correo();
+           
+            Correo correo = new Correo();
             correo.procesar(txtCorreo.Text, txtCorreo2.Text, txtAsunto.Text, txtMensaje.Text);
-            mensaje("Mensaje enviado con exito");
-            }
-            catch
-            {
-                mensaje("Mensaje no enviado");
-            }
+          
+          
         }
 
         public void mensaje(String pMensaje)
