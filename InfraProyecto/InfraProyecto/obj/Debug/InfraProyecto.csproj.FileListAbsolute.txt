@@ -283,3 +283,5 @@ C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\InfraProyecto\InfraProy
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.csprojResolveAssemblyReference.cache
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.dll
 C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.pdb
+C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\InfraProyecto\InfraProyecto\obj\Debug\Interop.hMailServer.dll
+C:\Users\majom\OneDrive\Documentos\GitHub\ProyectoInfra2\InfraProyecto\InfraProyecto\obj\Debug\InfraProyecto.csproj.ResolveComReference.cache

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
+using hMailServer;
 
 namespace ProyectoInfra2.logicaNegocios
 {
@@ -25,44 +26,15 @@ namespace ProyectoInfra2.logicaNegocios
 
             }
         }
-        
 
-
-        public void registrarUsuario(String pCorreo, String pContraseña)
+        public void conectarBD2()
         {
             try
             {
-                // conectarBD();
-                conectarBD();
-                conectado.Open();
-                comandoUsuario = new MySqlCommand();
-                comandoUsuario.Connection = conectado;
 
-                comandoUsuario.CommandText = comandoUsuario.CommandText = "INSERT INTO hm(correo,contraseña) VALUES(@Correo,@Contraseña)";
-                comandoUsuario.Parameters.AddWithValue("@Correo", pCorreo);
-                comandoUsuario.Parameters.AddWithValue("@Contraseña", pContraseña);
 
-                comandoUsuario.ExecuteNonQuery();
-                conectado.Close();
-            }
-            catch (Exception)
-            {
-
-            }
-        }
-
-        public void eliminarUsuario(String pCorreo)
-        {
-            try
-            {
-                conectarBD();
-                conectado.Open();
-                comandoUsuario = new MySqlCommand();
-                comandoUsuario.Connection = conectado;
-
-                comandoUsuario.CommandText = "Delete from usuario where correo='" + pCorreo + "';";
-                comandoUsuario.ExecuteNonQuery();
-                conectado.Close();
+                conection = "Server=localhost;database=infra2;uid =root;password =elegance5;SslMode=None;";
+                conectado = new MySqlConnection(conection);
             }
             catch (Exception)
             {
@@ -71,9 +43,56 @@ namespace ProyectoInfra2.logicaNegocios
         }
 
 
-        public bool verificarContrasena(String pContraseña)
+
+
+
+        public void registrarUsuario(String pUsuario, String pContraseña)
         {
-            //conectarBD();
+            try
+            {
+                hMailServer.Application aplicacion = new hMailServer.Application();
+                aplicacion.Authenticate("Administrador", "12345");
+                var domain = aplicacion.Domains.ItemByName["rubenabix.com"];
+                var account = domain.Accounts.Add();
+                account.Address = pUsuario;
+                account.Password = pContraseña;
+                account.Active = true;
+
+                account.Save();
+
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+
+        public void EliminarUsuario(String pUsuario)
+        {
+            try
+            {
+                hMailServer.Application aplicacion = new hMailServer.Application();
+                aplicacion.Authenticate("Administrador", "12345");
+                var domain = aplicacion.Domains.ItemByName["rubenabix.com"];
+                var account = domain.Accounts.ItemByAddress[pUsuario];
+                account.Active = true;
+
+                account.Save();
+
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+
+        public bool verificarContrasenaAdmin(String pContraseña)
+        {
+           
             conectarBD2();
             conectado.Open();
             comandoUsuario = new MySqlCommand();

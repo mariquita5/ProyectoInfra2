@@ -35,7 +35,7 @@
                                 <!--Contraseña-->
                                 <h4>Contraseña</h4>
                                 <p style="text-align: center">
-                                    <asp:TextBox ID="txtcontraseña" placeholder="Contraseña"  runat="server"  Width="400px"></asp:TextBox>
+                                    <asp:TextBox ID="txtcontraseña" placeholder="Contraseña"  TextMode="Password" runat="server"  Width="400px"></asp:TextBox>
                                 </p>
          
                             </div>

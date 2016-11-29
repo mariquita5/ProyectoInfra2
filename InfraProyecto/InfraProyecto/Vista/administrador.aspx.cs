@@ -14,17 +14,10 @@ namespace ProyectoInfra2.Vista
 
         protected void Button1_Click(object sender, System.EventArgs e)
         {
-            if (lblError.Text == String.Empty)
-            {
+            
                 Admin administrador = new logicaNegocios.Admin();
                 administrador.registrarUsuario(txtUsuario.Text, txtContraseña.Text);
                 mensaje("Usuario registrado con exito");
-
-            }
-            else
-            {
-                mensaje("Ingrese todos los campos");
-            }
 
 
         }
@@ -33,7 +26,7 @@ namespace ProyectoInfra2.Vista
         {
 
             Admin administrador = new logicaNegocios.Admin();
-            administrador.eliminarUsuario(txtUsuario.Text);
+            administrador.EliminarUsuario(txtUsuario.Text);
             mensaje("Usuario eliminado con exito");
 
         }

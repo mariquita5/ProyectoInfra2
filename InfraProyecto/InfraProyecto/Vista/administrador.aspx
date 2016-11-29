@@ -47,12 +47,12 @@
                                 <!--Usuario-->
                                 <h4>Usuario</h4>
                                 <p style="text-align: center">
-                                    <asp:TextBox ID="txtUsuario" placeholder="Correo electrónico" TextMode="Email" runat="server" CssClass="input inputEmail" Width="400px"></asp:TextBox>
+                                    <asp:TextBox ID="txtUsuario" placeholder="Usuario"  runat="server"  Width="400px"></asp:TextBox>
                                 </p>
                                 
                                 <h4>Contraseña</h4>
                                 <p style="text-align: center">
-                                    <asp:TextBox ID="txtContraseña" placeholder="Contraseña"  runat="server"  Width="400px"></asp:TextBox>
+                                    <asp:TextBox ID="txtContraseña" placeholder="Contraseña"  TextMode="Password" runat="server"  Width="400px"></asp:TextBox>
                                 </p>
 
                             </div>
