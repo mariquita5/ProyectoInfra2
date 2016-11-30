@@ -26,16 +26,11 @@ namespace ProyectoInfra2.Vista
         {
 
             Admin administrador = new logicaNegocios.Admin();
-            administrador.EliminarUsuario(txtUsuario.Text);
+            administrador.eliminarUsuario(txtUsuario.Text);
             mensaje("Usuario eliminado con exito");
 
         }
 
-        protected void Button3_Click(object sender, System.EventArgs e)
-        {
-
-            
-        }
 
 
         public void mensaje(String pMensaje)
