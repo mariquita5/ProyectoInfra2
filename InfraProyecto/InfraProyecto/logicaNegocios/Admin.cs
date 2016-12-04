@@ -57,7 +57,6 @@ namespace ProyectoInfra2.logicaNegocios
                 account.Address = pUsuario;
                 account.Password = pContraseña;
                 account.Active = true;
-
                 account.Save();
 
 
@@ -69,19 +68,20 @@ namespace ProyectoInfra2.logicaNegocios
         }
 
 
-        public void EliminarUsuario(String pUsuario)
+        
+        public void eliminarUsuario(String pCorreo)
         {
             try
             {
-                hMailServer.Application aplicacion = new hMailServer.Application();
-                aplicacion.Authenticate("Administrador", "12345");
-                var domain = aplicacion.Domains.ItemByName["rubenabix.com"];
-                var account = domain.Accounts.ItemByAddress[pUsuario];
-                account.Active = true;
 
-                account.Save();
+                conectarBD();
+                conectado.Open();
+                comandoUsuario = new MySqlCommand();
+                comandoUsuario.Connection = conectado;
 
-
+                comandoUsuario.CommandText = "Delete from hm_accounts where accountaddress='" + pCorreo + "';";
+                comandoUsuario.ExecuteNonQuery();
+                conectado.Close();
             }
             catch (Exception)
             {
@@ -89,6 +89,8 @@ namespace ProyectoInfra2.logicaNegocios
             }
         }
 
+
+    
 
         public bool verificarContrasenaAdmin(String pContraseña)
         {
